@@ -25,17 +25,12 @@
 	$MENU_TEMPLATE['button-text']['end'] 					= '</div>'; 
 
 	$MENU_TEMPLATE['image-text-button']['start'] 		= '<div class="cpage-menu {CMENUNAME}">';
-	$MENU_TEMPLATE['image-text-button']['body'] 		= '{SETIMAGE: w=400&h=400&crop=1}<div class="about-cover">
-  {CMENUIMAGE}
-  </div>
- 
-  {CMENUBODY}{CPAGEBUTTON}';
+	$MENU_TEMPLATE['image-text-button']['body'] 		= '{SETIMAGE: w=400&h=400&crop=1}
+        <div class="about-cover">
+            {CMENUIMAGE}
+        </div>
+        {CMENUBODY}
+        <div style="position: relative; left: -100px;"> {CPAGEBUTTON}</div>';
 	$MENU_TEMPLATE['image-text-button']['end'] 			= '</div>';  
  
- 
- 
-       
-         
-	
-	
 ?>

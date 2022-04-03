@@ -27,11 +27,11 @@ define('VIEWPORT', 		"width=device-width, initial-scale=1.0");
 if(!defined('e_SEARCH')) {  
   define('e_SEARCH', e_HTTP.'search.php');
 }
-
+/*
 if(THEME_LAYOUT == 'contact')  {
  define('BODYTAG', '<body class="contact-page '.THEME_LAYOUT.'">');
 }
-
+*/
 // load libraries 
 e107::library('load', 'bootstrap');
 e107::library('load', 'fontawesome');
@@ -241,15 +241,18 @@ function tablestyle($caption, $text, $id='', $info=array())
 	
 	$type = $style;
   
-  if($id == 'news_categories_menu')  {
-    $style = 'categories';
-  } 
-  elseif($id == 'news_latest_menu')  {
-    $style = 'recent-posts';
-  } 
-  elseif($id == 'comment')  {
-    $style = 'none';
-  }  
+	if($id == 'cmenu-image-text-button')  {
+		$style = 'about';
+  	} 	
+  	if($id == 'news_categories_menu')  {
+    	$style = 'categories';
+  	}	 
+  	elseif($id == 'news_latest_menu')  {
+    	$style = 'recent-posts';
+  	} 
+  	elseif($id == 'comment')  {
+    	$style = 'none';
+  	}  
   
   
   
@@ -318,10 +321,21 @@ function tablestyle($caption, $text, $id='', $info=array())
 		return;	
 		
 	}
+
+	if($style == 'about')
+	{
+		echo '<div class="widget widget-about">
+	  <h3 class="widget-title">'.$caption.'</h3>
+	  <div class="widget-bg">
+	   '.$text.'
+	  </div>
+	</div>';
+		return;	
+	}		
 		
 	if($style == 'menu')
 	{
-		echo '<div class="widget widget-about">
+		echo '<div class="widget widget-menu">
 	  <h3 class="widget-title">'.$caption.'</h3>
 	  <div class="widget-bg">
 	   '.$text.'

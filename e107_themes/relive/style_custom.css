@@ -127,12 +127,12 @@ ul.online-menu li  {
     line-height: 1.5em;
 }
 
-.contact-page header {
+#layout-contact header {
     margin-bottom: -262px;
     padding-bottom: 262px;
 }
 
-.contact-page header {
+#layout-contact header {
   background: url(images/contact-bg.jpg) top center;
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/contact-bg.jpg); 
       background-size: cover;

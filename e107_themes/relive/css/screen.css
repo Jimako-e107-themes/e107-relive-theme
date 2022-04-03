@@ -822,7 +822,7 @@ header .logo {
 	padding: 40px 40px 0;
 }
 .main-sidebar .widget .widget-bg {
-	background: #fff;
+ 
 	padding: 20px;
 	position: relative;
 }
@@ -886,6 +886,7 @@ header .logo {
 	line-height: 1.3em;
 }
 .main-sidebar .widget-about .widget-bg {
+    background: #fff;
 	padding-left: 185px;
 }
 .main-sidebar .widget-about .about-cover {

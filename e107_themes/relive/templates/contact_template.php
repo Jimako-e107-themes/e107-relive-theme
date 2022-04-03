@@ -73,7 +73,7 @@ $CONTACT_TEMPLATE['menu'] =  '
 	// In this case (see contact.php) e107::getScBatch('contact')->wrapper('contact/form')
 	// Only one Option is used - WRAPPER > SC_STYLE
 
-	$CONTACT_WRAPPER['form']['CONTACT_IMAGECODE'] 			= "<div class='col-md-6'>{CONTACT_IMAGECODE_LABEL}{---}</div>";
+	$CONTACT_WRAPPER['form']['CONTACT_IMAGECODE'] 			= "<div class='col-md-6'>{CONTACT_IMAGECODE_LABEL} {---}</div>";
 	$CONTACT_WRAPPER['form']['CONTACT_IMAGECODE_INPUT'] 	= "<div class='col-md-6'>{---}</div>";
 	$CONTACT_WRAPPER['form']['CONTACT_EMAIL_COPY'] 			= "<div class='control-group form-group'>{---}".LANCONTACT_07."</div>";
 	$CONTACT_WRAPPER['form']['CONTACT_PERSON']				= "<div class='control-group form-group'><label for='contactPerson'>".LANCONTACT_14."</label>{---}</div>";
@@ -94,10 +94,8 @@ $CONTACT_TEMPLATE['form'] = "
 		<div class='col-md-12'>
 			{CONTACT_SUBJECT: class=col-md-12&placeholder=".LANCONTACT_05."}
 		</div>
-		<div class='col-md-12'>
-			{CONTACT_SUBMIT_BUTTON}
-		</div>
-	</div>
+    </div>
+
 	<div class='row' style='padding-top: 20px; padding-bottom: 20px;'>
 		{CONTACT_IMAGECODE}
 		{CONTACT_IMAGECODE_INPUT}
@@ -111,6 +109,11 @@ $CONTACT_TEMPLATE['form'] = "
 			</div>
 		</div>
 	</div>
+	<div class='row'>
+		<div class='col-md-12 text-right'>
+			{CONTACT_SUBMIT_BUTTON}
+		</div>
+	</div>    
 </form>
 ";
 
